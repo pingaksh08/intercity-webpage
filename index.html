@@ -12,6 +12,13 @@
     />
   </head>
   <body>
+    <style>
+      @media screen and (max-width: 667px) {
+        .colm-edited {
+          margin-top: 4px;
+        }
+      }
+    </style>
     <!-- navbar 1 -->
     <nav class="navbar navbar-expand-lg" style="background-color: black;">
       <div class="container-fluid">
@@ -146,56 +153,55 @@
     </nav>
     <!-- contact agent card -->
     <div
-      class="container-sm my-4 border border-dark"
+      class="container-sm my-4"
       style="
         /* background-color: gray; */
         padding-top: 5px;
         /* width: 1292px;
         height: 300px; */
-        outline-color: black;
+        
       "
     >
       <div class="d-flex justify-content-center my-4">
         <div class="container text-center">
           <div class="row">
-            <div class="col">
-              <div
-                class="card mb-3 border border-white"
-                style="max-width: 540px; margin-left: 100px;"
-              >
-                <div class="row g-0">
-                  <div class="col-md-4">
+            <div class="col-lg-8">
+              <div class="container" style="background-color: lightcyan; height: 345px;">
+                <div class="row">
+                  <div class="col-lg-5 offset-1">
                     <img
                       src="https://secureservercdn.net/198.71.233.230/qk6.abd.myftpupload.com/wp-content/uploads/2019/11/icr-logo-350x350.jpg"
-                      class="img-fluid rounded-start"
-                      alt="..."
+                      alt=""
+                      style="    height: 295px;
+                      width: 275px;
+                      margin-top: 25px;"
                     />
                   </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Aakash Yadav</h5>
-                      <h6 class="card-title">Sales Representative</h6>
-                      <p class="card-text">
+                  <div class="col-lg-5">
+                    <h3 style="font-size: 33px;">Aakash Yadav</h3>
+                    <h4 style="font-size: 21px; color: gray;">
+                      Sales Representative
+                    </h4>
+                    <br />
+                    <p>
+                      <b>
                         OFFICE: 416-79........
                         <br />
                         MOBILE: 437-23........
                         <br />
                         EMAIL: ay440230@gmail.com
-                      </p>
-                    </div>
+                      </b>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div
-                class="card border border-white"
-                style="width: 18rem; margin-left: 50px;"
-              >
+            <div class="col-lg-4">
+              <div class="container" style="background-color: lightcyan; height: 345px;">
                 <form>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">
-                      <b>Contact Aakash Yadav</b>
+                      <h3 style="font-size: 33px;">Contact Aakash Yadav</h3>
                     </label>
                     <input
                       type="text"
@@ -221,9 +227,21 @@
                       placeholder="Your Contact Number"
                     />
                   </div>
-                  <button type="submit" class="btn mb-2 btn-outline-dark">
-                    Send Message
-                  </button>
+                  <div
+                    class="conatiner"
+                    style=" border-radius: 5px; background-color: white;"
+                  >
+                    <p>
+                      Hi Aakash Yadav, I saw your profile on Intercity Realty
+                      Inc., Brokerage and wanted to see if you could help me
+                      
+                    </p>
+                  </div>
+                  <div class="container">
+                    <button type="submit" class="btn mb-2 btn-outline-dark">
+                      Send Message
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -232,159 +250,90 @@
       </div>
     </div>
     <!-- ============ contact agent card ends ================= -->
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="col" style="margin-left: 82px; font-size: 20px;">
-          <div class="card border border-dark" style="width: 18rem;">
-            <form>
-              <div class="mb-3">
-                <label
-                  for="exampleInputEmail1"
-                  class="form-label"
-                  style="margin-left: 75px;"
-                >
-                  <b>Find Agent</b>
-                </label>
-                <input
-                  type="text"
-                  class="form-control border border-white"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Agent Name"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control border border-white"
-                  id="exampleInputPassword1"
-                  placeholder="All Categories"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control border border-white"
-                  id="exampleInputPassword1"
-                  placeholder="All Cities"
-                />
-              </div>
-              <button
-                type="submit"
-                class="btn mb-2 btn-outline-dark"
-                style="margin-left: 64px;"
-              >
-                Search Agent
-              </button>
-            </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="col" style=" font-size: 20px;">
+            <div class="container" style="background-color: lightcyan;">
+              <div class="row mb-2 text-center"><b>Find Agents</b></div>
+              <div class="row"><div class="input-group mb-2">
+                <input type="text" class="form-control" placeholder="Enter Agent name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                
+              </div></div>
+              <div class="row"><div class="input-group mb-2">
+                <input type="text" class="form-control" placeholder="All Categories" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                
+              </div></div>
+              <div class="row"><div class="input-group mb-2">
+                <input type="text" class="form-control" placeholder="All Cities" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                
+              </div></div>
+              <div class="d-flex justify-content-center pb-2"><button type="button" class="btn btn-outline-dark">Search Agent</button></div>
+            </div>
           </div>
-        </div>
-        <br />
-        <div class="col" style="margin-left: 82px;">
-          <div class="card border border-dark" style="width: 18rem;">
-            <div
-              class="container"
-              style="margin-bottom: 3px; font-size: 20px; margin-left: 40px;"
-            >
-              <b>Latest Properties</b>
-            </div>
-            <div
-              class="card border border-white"
-              style="width: 16rem; margin-left: 15px;"
-            >
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="https://secureservercdn.net/198.71.233.230/qk6.abd.myftpupload.com/wp-content/uploads/2019/11/icr-logo-350x350.jpg"
-                      class="img-fluid rounded-start"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">14 Rabbit Run Way</h5>
-                      <h6 class="card-title">$2,995/Month</h6>
-                      <p class="card-text">
-                        3 beds • 3 baths •
-                        <br />
-                        Att/Row/Townhouse
+          <br />
+          <div class="container pb-2" style="background-color: lightcyan;">
+            <div class="col">
+              <div class="row mb-1 text-center" ><h5><b>Latest Properties</b></h5></div>
+              <div class="container mb-2 border border-dark" >
+                <div class="row">
+                  <div class="col-lg-5 d-flex justify-content-center align-items-center"><img src="https://secureservercdn.net/198.71.233.230/qk6.abd.myftpupload.com/wp-content/uploads/2018/02/intercity-realty-logo-main.png" alt="" height="100px" width="125px"></div>
+                   <div class="col-lg-7"><div class="text-start">
+                    	<p>
+                        <h5>42 Richmond Cres</h5>
+                      <h6>$3,500</h6>
+                      <ul>
+                        <li>4 beds</li>
+                        <li>2 baths</li>
+                        <li>Detached</li>
+                      </ul>
                       </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card border border-white"
-              style="width: 16rem; margin-left: 15px;"
-            >
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="https://secureservercdn.net/198.71.233.230/qk6.abd.myftpupload.com/wp-content/uploads/2019/11/icr-logo-350x350.jpg"
-                      class="img-fluid rounded-start"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        8763 Bayview Ave Unit 826
-                      </h5>
-                      <h6 class="card-title">$888,800</h6>
-                      <p class="card-text">
-                        2 + 1 beds • 2 baths •
-                        <br />
-                        Condo/Apartment
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card border border-white"
-              style="width: 16rem; margin-left: 15px;"
-            >
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="https://secureservercdn.net/198.71.233.230/qk6.abd.myftpupload.com/wp-content/uploads/2019/11/icr-logo-350x350.jpg"
-                      class="img-fluid rounded-start"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">76 Renfield St</h5>
-                      <h6 class="card-title">$999,000</h6>
-                      <p class="card-text">
-                        3 beds • 2 baths •
-                        <br />
-                        Detached
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                   </div></div>
+                </div></div>
+                <div class="container mb-2 border border-dark">
+                  <div class="row">
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center"><img src="https://secureservercdn.net/198.71.233.230/qk6.abd.myftpupload.com/wp-content/uploads/2018/02/intercity-realty-logo-main.png" alt="" height="100px" width="125px"></div>
+                     <div class="col-lg-7"><div class="text-start">
+                        <p>
+                          <h5>4700 Highway 7 701</h5>
+                        <h6>$2,300</h6>
+                        <ul>
+                          <li>1 bed</li>
+                          <li>2 baths</li>
+                          <li>Condo/Apartment</li>
+                        </ul>
+                        </p>
+                     </div></div>
+                  </div></div>
+                  <div class="container mb-2 border border-dark">
+                    <div class="row">
+                      <div class="col-lg-5 d-flex justify-content-center align-items-center"><img src="https://secureservercdn.net/198.71.233.230/qk6.abd.myftpupload.com/wp-content/uploads/2018/02/intercity-realty-logo-main.png" alt="" height="100px" width="125px"></div>
+                       <div class="col-lg-7"><div class="text-start">
+                          <p>
+                            <h5>40 Via Toscana</h5>
+                          <h6>$3,500</h6>
+                          <ul>
+                            <li>3 beds</li>
+                            <li>3 baths</li>
+                            <li>Att/Row/Townhouse</li>
+                          </ul>
+                          </p>
+                       </div></div>
+                    </div></div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-8">
-        <div
-          class="d-flex justify-content-center border border-dark"
-          style="
-            /* background-color: gray; */
-            width: 874px;
-            height: 30px;
-            font-size: 20px;
-          "
-        >
-          <b>Sorry, No results found.</b>
+        <div class="col-lg-7 col-sm-12 colm-edited offset-1">
+          <div
+            class="container"
+            style="
+              font-size: 20px;     
+            "
+          >
+            <div class="container" style="background-color: lightcyan;">
+              <b>Sorry, No results found.</b>
+            </div>    
+          </div>
         </div>
       </div>
     </div>
